@@ -41,6 +41,7 @@ public class User_adapter extends RecyclerView.Adapter<User_adapter.UserViewHold
        holder.email.setText(user.getEmail());
         holder.phone.setText(user.getPhone());
         holder.username.setText(user.getUsername());
+       // holder.sex.setText(user.getSex());
 
     }
 
