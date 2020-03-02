@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pic"
     android:orientation="vertical"
-    tools:context=".NotificationFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".NotificationFragment" >
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-
-</LinearLayout>
+        android:id="@+id/textView3"
+        android:layout_width="394dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textColor="#2196F3"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        tools:text="Notifications" />
+</androidx.constraintlayout.widget.ConstraintLayout>

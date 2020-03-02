@@ -20,6 +20,7 @@ Button signup;
 Button login;
 DbHelper dbHelper;
 Context context;
+Boolean session;
 
 
     @Override
@@ -49,11 +50,20 @@ Context context;
                     Intent intent = new Intent(MainActivity.this,HomePage.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity.this,"Login Successful!",Toast.LENGTH_SHORT).show();
+                    SharedPref.save(getApplicationContext(),"session","true");
                 }
                 else {
                     Toast.makeText(MainActivity.this,"Invalid Username or Password",Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

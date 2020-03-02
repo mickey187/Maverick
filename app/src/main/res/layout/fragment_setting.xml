@@ -3,15 +3,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingFragment">
-
-    <Button
-        android:id="@+id/logout"
-
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button_style"
-        android:fontFamily="cursive"
-        android:text="Logout"
-        android:textColor="#FFFFFF" />
-</FrameLayout>
+    tools:context=".SettingFragment"/>

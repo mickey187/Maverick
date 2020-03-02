@@ -4,24 +4,22 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPref {
-    SharedPreferences pref;
-    SharedPreferences.Editor editor;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor ;
     Context context;
-    public SharedPref(Context context){
-        this.context = context;
-        pref = context.getSharedPreferences("",Context.MODE_PRIVATE);
-        editor = pref.edit();
+    public static void save(Context context,String name, String value){
+
+       SharedPreferences preferences = context.getSharedPreferences("",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(name,value);
+        editor.apply();
 
 
 
     }
-    public void setLoggedIn(boolean logggedin){
-        editor.putBoolean("loggedInmode", logggedin);
-        editor.commit();
-    }
-
-    public boolean loggedIn(){
-        return pref.getBoolean("loggedInmode", false);
-    }
+  public static String read(Context context,String name,String defaultValue){
+        SharedPreferences preferences = context.getSharedPreferences("clipcodes",Context.MODE_PRIVATE);
+return preferences.getString(name,defaultValue);
+  }
 
 }
