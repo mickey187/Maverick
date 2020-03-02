@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    tools:context=".Signup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="cursive"
+
+            android:text="Signup"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Fullname"
+            android:textColor="#2196F3"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="fullname"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Username"
+            android:textColor="#2196F3"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="E-mail"
+            android:textColor="#2196F3"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="example@example.com"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Password"
+            android:textColor="#2196F3"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Phone No"
+            android:textColor="#2196F3"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Sex"
+            android:textColor="#2196F3"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Female"
+                android:textColor="#2196F3"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Male"
+                android:textColor="#2196F3"
+                android:textSize="25dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:fontFamily="cursive"
+            android:text="Signup"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

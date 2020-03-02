@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Maverick</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_notif">Notifications</string>
+    <string name="nav_user">User</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_set">Setting</string>
+    <string name="nav_sett">Settings</string>
+
+</resources>
